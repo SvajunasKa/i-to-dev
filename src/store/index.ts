@@ -1,5 +1,5 @@
 import { createLogger, createStore } from "vuex";
-import movies, { MoviesState } from "./module";
+import movies, { MoviesState } from "./modules/movies/movies.module";
 
 export enum StoreModule {
   MOVIES = "movies"

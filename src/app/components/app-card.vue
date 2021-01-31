@@ -1,22 +1,19 @@
 <template>
   <div class="app-card pt-4">
-    <div class="font-bold text-base">
-      <slot name="title"/>
+    <div class="font-bold text-base" v-if="$slots.title">
+      <slot name="title" />
     </div>
     <div class="text-sm">
-      <slot/>
+      <slot />
     </div>
   </div>
-
 </template>
 
 <script lang="ts">
-import {defineComponent} from "vue";
+import { defineComponent } from "vue";
 export default defineComponent({
-name: "app-card"
-})
+  name: "app-card"
+});
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

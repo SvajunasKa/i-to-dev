@@ -1,4 +1,4 @@
-export interface Movies {
+export interface Movie {
   characters: string[];
   created: Date;
   director: string;
@@ -15,6 +15,10 @@ export interface Movies {
   vehicles: string[];
 }
 
-export interface ResponseResults {
-  results: Movies[];
+export interface MoviesResponseResults {
+  results: Movie[];
+}
+
+export interface MovieResponseResults {
+  results: Movie;
 }
